@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 40px;
+  padding-top: 100px;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.cars-section {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.eachcar {
+  width: 30%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.75);
+}
+
+.car-info-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px
+}
+
+.car-info-section>h4,
+span,
+p {
+  margin: 0;
+  padding: 0
+}
+
+.car-button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+
+.car-image-section {
+  max-height: 300px;
+  width: 100%;
+}
+
+
+.car-image {
+  height: fit-content;
+  width: 100%;
+  border-radius: 24px 24px 0px 0px;
+  object-fit: fill;
+}
+
+
+.info-section {
+  width: 40%;
+  text-align: left;
+}
+
+
+/* Individual */
+
+
+.ind-car-section {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  border: #282c34 1px solid;
+  gap: 10px
+}
+
+.ind-image-section {
+  width: 45%;
+}
+
+.ind-car-image {
+  object-fit: cover;
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px
+}
+
+.ind-info-section {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0
+}
+
+.ind-info-section>h3,
+h4,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .cars-section {
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+  }
+
+  .eachcar {
+    width: 80%;
+  }
+
+  .ind-car-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    border: #282c34 1px solid;
+    gap: 10px
+  }
+
+  .ind-info-section,
+  .ind-image-section {
+    width: 80%;
+  }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
