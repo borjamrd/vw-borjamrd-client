@@ -23,7 +23,7 @@ export function DetailView() {
 
   useEffect(() => {
     async function fetchcar() {
-      const resp = await axios.get('http://18.234.140.250:3002/api/car')
+      const resp = await axios.get('https://vw-test-service.onrender.com/api/car')
 
       setCar([...resp.data.Novedades])
 
